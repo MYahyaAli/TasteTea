@@ -1,0 +1,1308 @@
+/*reset and root*/
+:root
+{
+    --primarycolor:rgb(128, 176, 185);
+    --secondaycolor:rgb(43, 209, 195);
+    --tertiorycolor:rgb(75, 218, 82);
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(181, 182, 181, 0.103);
+    overflow-x: hidden;
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+/*NavBar*/
+#top
+{
+    list-style-type: none;
+    background:var(--secondaycolor);
+    height: 80px;
+    width: 100%;
+}
+#top label.logo
+{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 55px;
+    font-weight: bold;
+    font-family: 'Courgette';
+}
+#top ul
+{
+    float: right;
+    margin-right: 20px;
+}
+#top ul li
+{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 3px;
+}
+#top ul li a
+{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 0 15px;
+    display: block;
+    cursor: pointer;
+}
+#top ul li a.activate,#top ul li a:hover
+{
+    background: rgba(128, 128, 128,0.5);
+    transition: .5s ease-in-out;    
+}
+#top .checkbtn
+{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#top #check
+{
+    display: none;
+}
+#top ul li a:hover
+{
+    background: rgba(128, 128, 128,0.5);
+    transform: rotate(360deg);
+    transition: .9s;
+}
+/*NavEnd*/
+
+main
+{
+    font-family: 'Kavivanar', cursive;
+}
+main .contnt .intobx
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    background-image: url(../Images/bg3.png);
+    background-position:top;
+    background-repeat: repeat-x;
+    width: 100%;
+    align-items:center;
+}
+main .contnt .intobx .in1
+{
+    grid-column: 1/5;
+    background-color:rgba(55, 55, 56, 0.726);
+    text-align: justify;
+    box-shadow: 2px 2px 4px rgba(45, 104, 94, 0.5);
+    width: 100%;
+    padding: 2px 4px;
+    margin: 5px;
+    border-radius: 6px;
+}
+main .contnt .intobx .in1 h2
+{
+    font-size: 35px;
+    padding-left: 100px;
+    text-shadow: 3px 3px 3px var(--secondaycolor);
+}
+main .contnt .intobx .in1 p
+{
+    padding: 0 5px;
+    margin: 5px;
+    font-weight: 600;
+    color: white;
+}
+main .contnt .intobx .introimg1
+{
+    grid-column: 5/7;
+    align-items: center;
+    padding: 20px;
+    opacity: 0.9;
+}
+main .contnt .intobx .introimg1 img
+{
+    justify-content: center;
+    max-height:400px;
+    width: 90%;
+}
+main .contnt .intobx .in2
+{
+    grid-column: 3/7;
+    grid-row: 2;
+    background-color:rgba(174, 174, 175, 0.363);
+    text-align: justify;
+    box-shadow: 2px 2px 4px rgba(45, 104, 94, 0.5);
+    width: 100%;
+    padding: 2px 4px;
+    margin: 5px;
+    border-radius: 6px;
+}
+main .contnt .intobx .in2 h2
+{
+    font-size: 35px;
+    padding-left: 100px;
+    text-shadow: 3px 3px 3px var(--secondaycolor);
+}
+main .contnt .intobx .in2 p
+{
+    padding: 0 5px;
+    margin: 5px;
+}
+main .contnt .intobx .introimg2
+{
+    grid-column: 1/3;
+    grid-row: 2;
+    align-items: center;
+    padding: 20px;
+}
+main .intro .contbx
+{
+    display: grid;
+    grid-template-columns:repeat(8 , 1fr) ;
+    background-color: rgba(201, 201, 201, 0.1);
+}
+main .intro .contbx .cont1
+{
+    grid-column: 1/5;
+    background-color:rgba(174, 174, 175, 0.363);
+    text-align: justify;
+    box-shadow: 2px 2px 4px rgba(45, 104, 94, 0.5);
+    width: 100%;
+    padding: 2px 4px;
+    margin: 5px;
+    border-radius: 6px;
+}
+main .intro .contbx .cont1 .manufactuers
+{
+    margin: 3px 60px;
+    font-weight: bold;
+}
+main .intro .contbx .cont1 h2
+{
+    font-size: 35px;
+    padding-left: 25px;
+    text-shadow: 3px 3px 3px var(--tertiorycolor);
+}
+main .intro .contbx .cont1 p
+{
+    padding: 0 5px;
+    margin: 5px;
+}
+main .intro .contbx .img1
+{
+    grid-column: 1/5;
+    grid-row: 2 ;
+    align-items: center;
+    padding: 20px;
+}
+main .intro .contbx .img2
+{
+    grid-column: 5/8;
+    width: 100%;
+    align-self: center;
+    padding: 20px;
+}
+main .intro .contbx .cont2
+{
+    grid-column: 5/9;
+    background-color:rgba(174, 174, 175, 0.363);
+    text-align: justify;
+    box-shadow: 2px 2px 4px rgba(45, 104, 94, 0.5);
+    width: 100%;
+    padding: 2px 4px;
+    margin: 5px;
+    border-radius: 6px;
+}
+main .intro .contbx .cont2 .tt
+{
+    margin: 3px 60px;
+    font-weight: bold;
+}
+main .intro .contbx .cont2 h2
+{
+    font-size: 35px;
+    padding-left: 25px;
+    text-shadow: 3px 3px 3px var(--tertiorycolor);
+}
+main .intro .contbx .cont2 p
+{
+    padding: 0 5px;
+    margin: 5px;
+}
+/*Tot design*/
+.silde .slideshow
+{
+    position: unset;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(180, 184, 182, 0.1);
+    margin: 0;
+    padding: 0;
+}
+.silde .slideshow .sld
+{
+    list-style: none;
+    position: relative;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid var(--primarycolor);
+    float: left;
+    box-sizing:border-box;
+    transition: 0.5s;
+    text-align: center;
+    overflow: hidden;
+}
+.silde .slideshow .sld:nth-child(1)
+{
+    background-image: url(../Images/tot/black-tea.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.silde .slideshow .sld:nth-child(2)
+{
+    background-image: url(../Images/tot/Oolong\ tea.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.silde .slideshow .sld:nth-child(3)
+{
+    background-image: url(../Images/tot/green-tea.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.silde .slideshow .sld:nth-child(4)
+{
+    background-image: url(../Images/tot/Whitetea.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.silde .slideshow .sld:nth-child(5)
+{
+    background-image: url(../Images/tot/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.silde .slideshow .sld .topic
+{
+    font-size: 50px;
+    transform: rotate(90deg);
+    padding: 560px 0;
+}
+.silde .slideshow .sld .topic i
+{
+    opacity: 0.5;
+}
+.silde .slideshow:hover .sld:nth-child(5) .topic
+{
+    display: none;
+}
+.silde .slideshow:hover .sld
+{
+    width: 10%;
+}
+.silde .slideshow .sld:hover
+{
+    width: 60%;
+}
+.silde .slideshow .sld .text
+{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color:rgba(31, 31, 31, 0.671);
+    color: white;
+    opacity: 0;
+}
+.silde .slideshow .sld:hover .text
+{
+    bottom: 0;
+    transition: .5s;
+    transition-delay: .2s;
+    opacity: 1;
+}
+    /*Table*/
+main .table .tableheading
+{
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 2px 2px 2px var(--secondaycolor);
+    font-size: 30px;
+    padding-left: 50px;
+}
+main .table .Tea_Types
+{
+        width: 100%;
+}
+main .table
+{
+    padding: 40px 10px;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px auto 0;
+    font-size: 15px;
+    color: var(--primarycolor);
+    border-radius: 10px;
+}
+main .table .Tea_Types thead
+{
+    background-color: var(--secondaycolor);
+}
+main .table .Tea_Types th, main .table .Tea_Types td
+{
+    border: 1px solid var(--secondaycolor) ;
+    padding: 5px 10px;
+}
+main .table .Tea_Types tfoot td
+{
+    border: none;
+}
+/*Manu design*/
+.hovbx
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(174, 174, 175, 0.363);
+    position: unset;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.hovbx .card
+{
+    max-width:600px ;
+    position: relative;
+    height:300px;
+    background-color: rgba(55, 55, 56, 0.726);
+    margin: 40px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(117, 117, 117, 0.644);
+    transition: 0.3s ease-in-out;
+}
+.hovbx .card:hover
+{
+    height: 700px;
+}
+.hovbx .card .input h2
+{
+    margin: 10px;
+}
+.hovbx .card .input .lnk
+{
+    text-align: center;
+    border: 3px solid var(--primarycolor);
+    font-size: 30px;
+    border-radius: 30px;
+    background-color: var(--secondaycolor);
+    color: black;
+    padding: 10px;
+    margin: 20px 50px;
+    font-weight: bold;
+    box-shadow: 0  2px 10px var(--primarycolor);
+}
+.hovbx .card .imgbx
+{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    background-color: white;
+    top: -50;
+    left: 30px;
+    box-shadow: 0 5px 20px rgba(118, 128, 124, 0.555);
+    z-index: 1;
+}
+.hovbx .card .imgbx img
+{
+    width: 100%;
+    border-radius: 5px;
+}
+.hovbx .card .input
+{
+    font-size: 18px;
+    position: relative;
+    padding: 0 15px;
+    margin-top: -10px;
+    text-align: bottom;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.hovbx .card:hover .input
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay:0.3s ;
+}
+
+/*Purchase design*/
+main .wallpaper
+{
+    width: 100%;
+    height: min-content;
+}
+main .wallpaper img
+{
+    width: 100%;
+    height: min-content;
+}
+ /*Form design*/
+.container
+{
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 0 1.5em;
+}
+.teaItem
+{
+    margin: 30px;
+}
+.teaTitle
+{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+.teaItem img
+{
+    height: 250px;
+    width: 300px;
+}
+.teaDetails
+{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.teaPrice
+{
+    flex-grow: 1;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(19, 19, 19);
+}
+.teaItems
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cart-header
+{
+    font-weight: bold;
+    font-size: 1.25em;
+    color: rgb(7, 7, 7);
+}
+
+.cart-row 
+{
+    display: flex;
+}
+.cart-item
+{
+    width: 45%;
+}
+.cart-price
+{
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+.cart-quantity
+{
+    width: 35%;
+}
+.head
+{
+    align-items: center;
+    font-size: 40px;
+    margin: auto 40%;
+}
+.cart-column {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid var(--secondaycolor);
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cart-item {
+    width: 100%;
+}
+
+.cart-price {
+    width: 100%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 100%;
+}
+.cart-size
+{
+    width: 100%;
+}
+.cart-package
+{
+    width: 100%;
+}
+
+.cart-item-title {
+    color: rgb(36, 35, 35);
+    margin-left: .5em;
+    font-size: 0.75em;
+}
+
+.cart-item img {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+.btn-clear
+{
+    color: white;
+    background-color: rgb(236, 75, 75);
+    border: none;
+    border-radius: 2px;
+    font-size: 20px;
+}
+.btn-clear:hover
+{
+    background-color:rgba(158, 46, 46, 0.616) ;
+}
+.cart-quantity-input {
+    height: 34px;
+    width: 37px;
+    border-radius: 5px;
+    border: 1px solid #f25656;
+    background-color: #eee;
+    color: rgb(34, 34, 34);
+    padding: 0;
+    text-align: center;
+    font-size: 0.75em;
+    margin-right: 25px;
+}
+.cart-row:last-child
+{
+    border-bottom: 4px solid var(--secondaycolor);
+}
+.cart-row:last-child .cart-column
+{
+    border: none;
+}
+.cart-total
+{
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.cart-total-title
+{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+.cart-total-price 
+{
+    color: #333;
+    font-size: 1.1em;
+}
+.btn-purchase
+{
+    display: block;
+    margin: auto 40px auto 80px;
+    font-size:40px ;
+}
+.cartSizeOptions select
+{
+    font-size:  0.75em ;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #f25656;
+    background-color: #eee;
+    border-radius: 5px;
+    font-size: 0.75em;
+    text-align: center;
+}
+.cartPackageOptions select
+{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size:  0.75em ;
+    border: 1px solid #f25656;
+    background-color: #eee;
+    border-radius: 5px;
+    font-size: 0.75em;
+    text-align: center;
+}
+/*Contact design*/
+main .contact
+{
+    background-image: url(../Images/cntactbg.jpg);
+    width: auto;
+    height: fit-content;
+    background-position:right;
+}
+main .contact .small-bx
+{
+    margin: 30px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+main .contact .small-bx .congrid
+{
+    width: 100%;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: rgba(77, 80, 79, 0.603);
+}
+main .contact .small-bx .congrid .ani
+{
+    font-size: 17px;
+    font-weight: bold;
+    display: none;
+}
+main .contact .small-bx .congrid:hover .ani
+{
+    display: block;
+}
+main .contact .small-bx .congrid span
+{
+    font-size: 5em;
+    padding: 20px;
+}
+main .contact .small-bx .congrid p
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+main .contact .small-bx .e
+{
+    grid-column: 1/4;
+}
+main .contact .small-bx .e span
+{
+    background: linear-gradient(to bottom ,#ff0000,#f54842 ,#ffffff);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+main .contact .small-bx .c
+{
+    grid-column: 5/8;
+}
+main .contact .small-bx .w
+{
+    grid-column: 9/12;
+}
+main .contact .small-bx .w span
+{
+    background: linear-gradient(to right ,#18ed11,#62e375 ,#ffffff);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;color: rgb(59, 161, 59);
+}
+main .contact .small-bx .v
+{
+    grid-column: 1/4;
+    grid-row: 2;
+}
+main .contact .small-bx .v span
+{
+    color: rgb(241, 38, 231);
+}
+main .contact .small-bx .f
+{
+    grid-column: 5/8;
+    grid-row: 2;
+}
+main .contact .small-bx .f span
+{
+    background: linear-gradient(to bottom ,#1900ff,#0849d6,#ffffff);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;color: rgb(59, 161, 59);
+}
+main .contact .small-bx .I
+{
+    grid-column: 9/12;
+    grid-row: 2;
+}
+main .contact .small-bx .I span
+{
+    background: linear-gradient(to bottom ,#7125f5,#aa00c4,#e01111,#e7670c,#e6c510, #ffffff);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;color: rgb(59, 161, 59);
+}
+
+/*Buttons*/
+#Buttons
+{
+    background-color: rgba(181, 182, 181, 0.103);
+    text-align: center;
+}
+.btn
+{
+    border: 1px solid var(--secondaycolor);
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: .8s;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(48, 48, 48, 0.753);
+}
+.btn1
+{
+    color: black;
+}
+.btn2
+{
+    color: white;
+}
+.btn1:hover
+{
+    color: white;
+}
+.btn2:hover
+{
+    color: black;
+}
+.btn::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: var(--secondaycolor);
+    z-index: -1;
+    transition: .8s;
+}
+.btn1::before
+{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+.btn2::before
+{
+    bottom: 0;
+    border-radius: 50% 50%  0 0;
+}
+.btn2::before
+{
+    height: 180%;
+}
+.btn1:hover::before
+{
+    height: 180%;
+}
+.btn2:hover::before
+{
+    height: 0%;
+}
+
+/*footer*/
+footer
+{
+    position: unset;
+    bottom: 0px;
+    width: 100%;
+    height: auto;
+    background-color: #111;
+    color: white;
+}
+.main-content
+{
+    display: flex;
+}
+.main-content .box
+{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.box h2
+{
+    font: size 1.125rem ;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .content
+{
+    margin: 20px 0 0 0;
+}
+.left  .content p
+{
+    text-align: justify;
+}
+.left  .content .social
+{
+    margin: 20px 0 0 0; ;
+}
+.left  .content .social a
+{
+    padding: 0 2px;
+}
+.left  .content .social a span
+{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: .3s;
+}
+.left  .content .social a span:hover
+{
+    background:var(--secondaycolor);
+}
+.center .content
+{
+    align-items: flex-start;
+}
+.center .content .place
+{
+    padding: 5px 10px;
+}
+.center .content .phone
+{
+    padding: 5px 10px;
+}
+.center .content .email
+{
+    padding: 5px 10px;
+}
+.right
+{
+    align-items: flex-start;
+}
+.right .msg textarea
+{
+    box-shadow: 2px 2px 4px  var(--secondaycolor);
+}
+
+.bottom
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right button
+{
+    margin-top: 10px;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    align-items: center;
+    padding: 5px 7px;
+    border-radius: 10px;
+    font-size: inherit;
+}
+.right button:hover
+{
+    background-color: white;
+    color: black;
+}
+
+
+/*Responsivee*/
+@media(max-width:957px)
+{
+    #top label.logo
+    {
+        padding: 0 70px;
+    }
+    #top ul
+    {
+        margin-right: 15px;
+    }
+    #top ul li a
+    {
+        font-size: 14px;
+        padding: 2px 10px;
+    }
+    main .contnt .intobx .in1 h2
+    {
+        padding-left: 30px;
+    }
+    main .contnt .intro
+    {
+        display: inline-block;
+    }
+
+}
+@media(max-width:900px)
+{
+    #top label.logo
+    {
+        padding: 0 60px;
+    }
+    #top ul
+    {
+        margin-right: 12px;
+    }
+    #top ul li a
+    {
+        font-size: 13px;
+        padding: 2px 9px;
+    }
+    main .content .intro
+    {
+        display: block;
+    }
+    main .content .intro .intobx.in1 h2
+    {
+        align-items: center;
+    }
+    
+    main .contnt .intobx .in1 h2
+    {
+        font-size: 30px;
+    }
+    main .contnt .intobx .in2 h2
+    {
+        font-size: 30px;
+    }
+    main .contnt .contbx .cont1 h2
+    {
+        font-size: 30px;
+    }
+    main .contnt .contbx .cont2 h2
+    {
+        font-size: 30px;
+    }
+}
+@media(max-width:840px)
+{
+    #top label.logo
+    {
+        padding: 0 40px;
+        font-size: 30px;
+    }
+    #top ul
+    {
+        margin-right: 13px;
+    }
+    #top ul li a
+    {
+        font-size: 13px;
+        padding: 2px 7px;
+    }
+    main .contnt .intobx
+    {
+        display:block ;
+        margin-top: 18px;
+    }
+    main .contnt .intobx .introimg1 img
+    {
+        width: 100%;
+        border-bottom: 10px solid var(--secondaycolor);
+        align-items: center;
+    }
+    main .contnt .intobx .introimg2
+    {
+        padding-left: 30%;
+    }
+    main .contnt .intobx .introimg2 img
+    {
+        height: 400px;
+        width: 50%;
+        border-bottom: 10px solid var(--secondaycolor);
+        align-items: center;
+    }
+    main .contnt .contbx
+    {
+        margin-top: 20px;
+    }
+}
+@media(max-width:768px)
+{
+    #top label.logo
+    {
+        padding: 0 30px;
+        font-size: 30px;
+    }
+    #top ul
+    {
+        margin-right: 12px;
+    }
+    #top ul li a
+    {
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+    .products
+    {
+        display: block;
+    }
+    main .contact .small-bx
+    {
+        display: block;
+    }
+    main .contact .small-bx .congrid
+    {
+        width: 100%;
+    }
+}
+@media(max-width:685px)/*Mobile*/
+{
+    #top .checkbtn
+    {
+        display: block;
+    }
+    #top ul
+    {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    #top ul li
+    {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #top ul li a
+    {
+        font-size:20px ;
+    }
+    #top ul li a:hover
+    {
+        transform: none;
+    }
+    a.activate, a:hover
+    {
+        background:none;
+        color: rgb(110, 128, 122);
+    }
+    #top #check:checked ~ ul
+    {
+        left: 0;
+    }
+    #top ul li i
+    {
+        display: none;
+    }
+    main .contnt .intro .in1 h2
+    {
+        font-size: 30px;
+        padding-left: 20px;
+    }
+
+    main .contnt .intobx .introimg1
+    {
+    opacity: 1;
+    }
+    main .contnt .intobx .introimg2
+    {
+        padding: 0;
+    }
+    main .contnt .intobx .introimg2 img
+    {
+        width: 100%;
+        border-bottom: 10px solid var(--secondaycolor);
+    }
+    main .contnt .contbx
+    {
+        display: block;
+    }
+    main .contnt .contbx .img1 img
+    {
+        width:100%;
+        border-bottom:10px solid var(--secondaycolor);
+    }
+    main .contnt .contbx .img2 img
+    {
+        width:100%;
+        border-bottom: 10px solid var(--secondaycolor);
+    }
+    main .table .tableheading
+    {
+        text-align: left;
+    }
+    main .table .Tea_Types thead
+    {
+        display: none;
+    }
+    main .table .Tea_Types tr, 
+    main .table .Tea_Types td
+    {
+        display: block;
+    }
+    main .table .Tea_Types tr:not(:last-child)
+    {
+        border-bottom: 5px solid var(--secondaycolor);
+    }
+    main .table .Tea_Types td
+    {
+        padding-left: 50%;
+        position: relative;
+    }
+    main .table .Tea_Types td::before
+    {
+        position: absolute;
+        padding: 5px;
+        left: 0;
+        top: 0%;
+        bottom: 0%;
+        width: 40%;
+        content: attr(data-col-title);
+        font-weight: bold;
+        background-color: rgba(174, 174, 175, 0.363);
+    }
+    main .contnt .intro
+    {
+        display: block;
+    }
+
+    .silde .slideshow .sld .topic
+    {
+        padding: 300px 0;
+    }
+    main .contnt .intro .introimg1
+    {
+        width: 90%;
+        margin-left: 20px;
+    }
+    main .contnt .silde
+    {
+        margin-top: 30px;
+    }
+    .main-content
+    {
+        display: block;
+    }
+    .main-content .left .content
+    {
+        border-bottom: 2px solid white;
+    }
+    .main-content .center .content
+    {
+        justify-content: space-around;
+        border-bottom: 2px solid white;
+    }
+    .hovbx .card .input
+    {
+        font-size: 14px;
+    }
+    .hovbx .card .input .lnk
+    {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .btn
+    {
+        font-size: 15px;
+        margin: 10px 20px;
+    }
+    .container
+    {
+       max-width: 100%;
+       margin: 5px;
+       padding: 5px;
+    }
+    .cart-header
+    {
+        font-size: 15px;
+    }
+    .btn-clear
+    {
+        font-size: 15px;
+    }
+    .cartSizeOptions select
+    {
+        width: 50px;      
+        font-size: 10px;
+    }
+    .cartPackageOptions select
+    {
+        width: 50px;      
+        font-size: 10px;
+    }
+    .cart-quantity-input
+    {
+        width: 15px;
+        margin:2px;
+    }
+    .cart-item-price
+    {
+        font-size:11px;
+        padding: auto;
+    }
+    .cart-item img{
+        display: none;
+    }
+    .cart-item-title
+    {
+        font-size: 10px;
+    }
+    .cart-item
+    {
+        width: auto;
+        padding: auto;
+    }
+    .cart-price
+    {
+        width: auto;
+    }
+    .cart-quantity
+    {
+        width: auto;
+    }
+    .cart-column {
+        width: auto;
+    }
+    .cart-row
+    {
+        text-align: left;
+        justify-content: left;
+    }
+}
