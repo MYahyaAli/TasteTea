@@ -227,3 +227,23 @@ footer i
         width: 100%;
     }
 }
+@media(max-width:685px)
+{
+    .heading
+    {
+        font-size: 50px;
+        margin-left: 10px;
+    }
+}
+@media(max-width:573px)
+{
+    .navigator
+    {
+        height: 200px;
+        display: flex;
+        flex-wrap:wrap ;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
